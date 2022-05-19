@@ -1,0 +1,30 @@
+Bu proje windows ortamında python ile yapılmis, opencv ve numpy kutuphaneleri kullanılmistir.Kutuphaneleri kurmak icin pip ile kutuphanelerin indirilmesi gerekilmektedir.
+Terminali acip altta verilenleri calistirin
+
+pip install numpy
+pip install opencv-python
+
+İndirdikten sonra main.py'i istedigniz bir ide ile acin.Ben windows'da gelistirdigim icin opencv'nin sample resimlerinin oldugu dosya'nın path'ini ekledim siz isterseniz bu satırı sizlebirisiniz
+
+
+cv.samples.addSamplesDataSearchPath("C:\opencv\sources\samples\data")  # isterseniz silin img path'ini imread icine cv.samples olanı silip kendi resminizin path'ini koyabilirsiniz
+
+
+img = cv.imread(cv.samples.findFile("apple.jpg"), cv.IMREAD_GRAYSCALE)
+img = cv.imread("path/to/your/img", cv.IMREAD_GRAYSCALE) # üstteki silinip boyle de yapılabilinir
+
+Histogram esiteme yapmak icin alttak verilen koddaki # kısımlarını kaldırın bu histogram esitleme fonksiyonlarını calistirir
+
+#f = histogram(img)
+#h = histogram_equalization(img,f)
+#histogram_mapping(img,h)
+
+Alttaki kodlar img'nin gorüntüsünü gosterir, gormek istiyorsanız # kısmını kaldırabilirsiniz
+
+#cv.imshow("Display window", img)
+#cv.waitKey(0)
+
+Histogram germe icin ise # kısmını kaldırıp histogram germe islemi yapılır
+#histogram_stretching(img)
+
+İsterseniz print(f), print(h) yapıp histogram degerlerini bakabilirsiniz [piksel_degeri,kac_kere_tekrarlandıgı seklinde yazdırır]

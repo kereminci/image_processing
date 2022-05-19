@@ -1,0 +1,19 @@
+KEREM İNCİ
+1306190041
+
+Bu proje windows ortamında python ile yapılmis, opencv ve numpy kutuphaneleri kullanılmistir.Kutuphaneleri kurmak icin pip ile kutuphanelerin indirilmesi gerekilmektedir.
+Terminali acip altta verilenleri calistirin
+
+pip install numpy
+pip install opencv-python
+
+IDE'niz ile prewit.py ve robert.py açabilirsiniz, ben apple.jpg dosyası uzerinden yaptım , eger siz isterseniz bunu degistirebilrsiniz.
+
+img = cv.imread("/path/to/my/img", cv.IMREAD_GRAYSCALE) şeklinde
+
+
+python prewit.py
+python robert.py
+
+Terminal'e yazarak sonuca bakabilirsiniz.
+RuntimeWarning: overflow encountered in ubyte_scalars uyarısı gelebilir önemli değil.
